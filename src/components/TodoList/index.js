@@ -1,9 +1,8 @@
 import React from 'react';
 import { Checkbox, Box, Stack, Button } from '@chakra-ui/react'
-
 import TodoItem from '../TodoItem';
 
-const TodoList = ({ todos }) => {
+const TodoList = ({ todos, completeTodo, deleteTodo }) => {
     return (
         <Box
             rounded={'lg'}
@@ -15,7 +14,12 @@ const TodoList = ({ todos }) => {
                 {
                     todos.map((todo, index) => {
                         return (
-                            <TodoItem todo={todo} key={index}/>
+                            <TodoItem
+                                key={index} 
+                                todo={todo} 
+                                completeTodo={completeTodo}
+                                deleteTodo={deleteTodo}
+                            />
                         )
                     })
                 }

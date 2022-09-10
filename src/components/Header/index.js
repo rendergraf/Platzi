@@ -1,7 +1,7 @@
 import React from 'react';
 import { VStack, Heading, Text} from '@chakra-ui/react'
 
-const Header = ({completeTodos, totalTodos}) => {
+const Header = ({completedTodos, totalTodos}) => {
     return(
         <VStack spacing={2} textAlign="center">
             <Heading
@@ -13,7 +13,11 @@ const Header = ({completeTodos, totalTodos}) => {
                 TODOs
             </Heading>
             <Text fontSize="lg" color={'gray.500'}>
-            Tienes {totalTodos} tareas completadas de {completeTodos}
+            
+            {
+                totalTodos > 0 ? `Tienes ${completedTodos} tareas completadas de ${totalTodos}`: `No tienes tareas`
+            }
+
             </Text>
         </VStack>
     )
