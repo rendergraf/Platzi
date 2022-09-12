@@ -23,7 +23,7 @@ const TodoList = () => {
                         <Skeleton height='20px' />
                         </Stack>
                     }
-                    {(!todos.length && !loading ) &&  <Text align={'center'}>No hay criterios de búsqueda</Text>}
+                    {(!todos.length && !loading) &&  <Text align={'center'}>No hay Todos</Text>}
                     <ModalTodo />
                     {
                         todos.map((todo, index) => {
