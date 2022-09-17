@@ -1,0 +1,25 @@
+{
+  "name": "fundamentos-de-typescript",
+  "version": "1.0.0",
+  "description": "Curso sobre los fundamentos de TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/rendergraf/Platzi.git"
+  },
+  "keywords": [
+    "TypeScript"
+  ],
+  "author": "Xavier Araque",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rendergraf/Platzi/issues"
+  },
+  "homepage": "https://github.com/rendergraf/Platzi#readme",
+  "devDependencies": {
+    "typescript": "^4.8.3"
+  }
+}
